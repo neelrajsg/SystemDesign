@@ -1,0 +1,27 @@
+package Design_payment_service;
+
+abstract public class Card implements PaymentMethod {
+    protected String cardNo;
+    protected String userName;
+
+    public Card(String cardNo, String userName) {
+        this.cardNo = cardNo;
+        this.userName = userName;
+    }
+
+    public String getCardNo() {
+        return cardNo;
+    }
+
+    public void setCardNo(String cardNo) {
+        this.cardNo = cardNo;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+}
